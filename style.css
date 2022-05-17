@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #36413d;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background: white;
+}
+
+header h1 {
+    color: #36413d;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-size: 3.5rem;
+}
+
+.score-board {
+    border: 1px solid white;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 4rem;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.tag {
+    background: #e70e39;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+#user-label {
+    position: absolute;
+    top: 35px;
+    left: -17px;
+}
+
+ #computer-label {
+    position: absolute;
+    top: 35px;
+    right: -15px;
+}
+
+.result {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.choice {
+    padding: 30px 20px;
+    margin: 20px 40px 20px 40px;
+    background: #36413d;
+    border-radius: 50%;
+    border: 3px solid #e70e39;
+    box-shadow: 1px 1px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background: rgba(0, 0, 0, 0.301);
+    box-shadow: 1px 1px 60px;
+}
+
+.choice:active {
+    background: rgba(0, 0, 0, 0.582);
+}
+
+.choice img {
+    width: 100px;
+}
+
+#rock {
+    width: 135px;
+}
+
+#rock img {
+    width: 90px;
+}
+
+#scissors {
+    height: 140px;
+}
+
+#scissors img {
+    margin-top: 10px;
+    width: 95px;
+}
+
+#instruction {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0687cc;
+}
