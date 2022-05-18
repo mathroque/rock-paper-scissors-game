@@ -22,6 +22,10 @@ function win(user, computer) {
     result.innerHTML = `${user[0].toUpperCase() + user.substring(1)} beats ${computer[0].toUpperCase() + computer.substring(1)}. You win!`
     userLabel.style = 'background: green'
     pcLabel.style = 'background: #e70e39'
+    if (userScore == option()) {
+        window.alert(`[Result: ${userScore} : ${pcScore}] User is the champion!`)
+        window.location.reload()
+    }
 }
 
 function tie(user, computer) {
@@ -36,6 +40,10 @@ function lose(user, computer) {
     result.innerHTML = `${computer[0].toUpperCase() + computer.substring(1)} beats ${user[0].toUpperCase() + user.substring(1)}. PC wins!`
     pcLabel.style = 'background: green'
     userLabel.style = 'background: #e70e39'
+    if (pcScore == option()) {
+        window.alert(`[Result: ${userScore} : ${pcScore}] PC is the champion!`)
+        window.location.reload()
+    }
 }
 
 function game (userChoice) {
@@ -63,4 +71,11 @@ function main() { //cria botões para chamar a função "game" passando um parâ
     })
 }
 
+function option() {
+    let tries = document.getElementById('attempts')
+    tries = Number(tries.value)
+    return tries
+}
+
 main()
+
